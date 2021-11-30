@@ -1,0 +1,36 @@
+String myName;
+String    myAge;
+String myMajor;
+String Q1 ="what is your name?";
+String Q2 ="How old are you?";
+String Q3 ="What is your major?";
+void setup(){
+  Serial.begin(9600);
+   Serial.println(Q1);
+  while (Serial.available()==0){ 
+  }
+    myName = Serial.readString();
+    Serial.print("your name is ");
+    Serial.println(myName);
+    
+  /*Serial.println(Q1);
+    myName = Serial.readString();
+    Serial.println(Q2);
+    myAge = Serial.readString();   
+    Serial.println(Q3);
+    myMajor = Serial.readString();  //fill you major
+
+   Serial.println();
+    Serial.println();
+
+    Serial.print("Your name is");
+    Serial.println(myName);
+    Serial.print("Your age is");
+    Serial.println(myAge);
+    Serial.println("Your major is");
+    Serial.print(myMajor);
+ */
+}
+
+void loop(){
+}  
